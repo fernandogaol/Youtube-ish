@@ -91,9 +91,14 @@ input {
     width: 70%;
     margin: auto;
   }
+  #results-list h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
   iframe {
     width: 70%;
     margin: auto;
     height: 600px;
+    border-radius: 15px;
   }
 }
