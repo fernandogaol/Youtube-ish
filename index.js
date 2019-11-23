@@ -11,15 +11,9 @@ function formatQueryParams(params) {
   return queryItems.join("&");
 }
 
-function displayResults(responseJson) {
-  // if there are previous results, remove them
+function displayYoutubeResults(responseJson) {
   $("#results-list").empty();
-  // iterate through the items array
   for (let i = 0; i < responseJson.items.length; i++) {
-    // for each video object in the items
-    //array, add a list item to the results
-    //list with the video title, description,
-    //and thumbnail
     $("#results-list").append(
       `<li><h3>${responseJson.items[i].snippet.title}</h3>
         <iframe width="360px" height="315" src="https://www.youtube.com/embed/${responseJson.items[i].id.videoId}" 
@@ -50,8 +44,9 @@ function getYouTubeVideos(query, maxResults = 15) {
       }
       throw new Error(response.statusText);
     })
-    .then(responseJson => displayResults(responseJson))
+    .then(responseJson => displayYoutubeResults(responseJson))
     .catch(err => {
+      console.log(err);
       $("#js-error-message").text(`Something went wrong: ${err.message}`);
     });
 }
@@ -60,8 +55,7 @@ function watchForm() {
   $("form").submit(event => {
     event.preventDefault();
     const searchTerm = $("#js-search-term").val();
-    const maxResults = $("#js-max-results").val();
-    getYouTubeVideos(searchTerm, maxResults);
+    getYouTubeVideos(searchTerm);
   });
 }
 
