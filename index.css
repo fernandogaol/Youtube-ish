@@ -20,9 +20,6 @@ button:hover {
 .header {
   background-color: red;
   color: white;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +49,7 @@ input:hover {
 button,
 input {
   border: 1px solid black;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .hidden {
@@ -69,4 +66,34 @@ input {
 #results-list {
   width: 360px;
   margin: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    max-width: 100vw;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header h1 {
+    font-size: 50px;
+  }
+  input {
+    font-size: 30px;
+    width: 250px;
+  }
+  button {
+    font-size: 30px;
+  }
+  #results-list {
+    width: 70%;
+    margin: auto;
+  }
+  iframe {
+    width: 70%;
+    margin: auto;
+    height: 600px;
+  }
 }
