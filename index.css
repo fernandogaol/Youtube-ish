@@ -79,9 +79,10 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 300px;
   }
   .header h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
   input {
     font-size: 30px;
@@ -109,10 +110,10 @@ input {
     background: white;
     color: black;
     position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 150px;
-    height: 180px;
+    left: 25px;
+    top: 25px;
+    width: 250px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,5 +130,9 @@ input {
   }
   .location-wrapper {
     display: flex;
+  }
+  .icon {
+    width: 100px;
+    height: 100px;
   }
 }
