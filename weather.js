@@ -7,7 +7,7 @@ function getWeatherApiData() {
       let lat = position.coords.latitude;
 
       fetch(
-        `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&APPID=be6b4e4507b58e4d123a095bed0d45a9`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&APPID=be6b4e4507b58e4d123a095bed0d45a9`
       )
         .then(response => response.json())
         .then(responseJSON => displayResults(responseJSON));
