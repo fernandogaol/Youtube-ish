@@ -57,3 +57,7 @@ input {
 #results-list li {
   list-style: none;
 }
+#results-list {
+  width: 360px;
+  margin: auto;
+}

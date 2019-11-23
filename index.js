@@ -22,7 +22,7 @@ function displayResults(responseJson) {
     //and thumbnail
     $("#results-list").append(
       `<li><h3>${responseJson.items[i].snippet.title}</h3>
-        <iframe width="375px" height="315" src="https://www.youtube.com/embed/${responseJson.items[i].id.videoId}" 
+        <iframe width="360px" height="315" src="https://www.youtube.com/embed/${responseJson.items[i].id.videoId}" 
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </li>`
     );
