@@ -94,10 +94,12 @@ input {
   #results-list {
     width: 70%;
     margin: auto;
+    line-height: 5rem;
+    text-align: center;
   }
   #results-list h3 {
     font-size: 25px;
-    margin-bottom: 5px;
+    text-align: center;
   }
   iframe {
     width: 70%;
