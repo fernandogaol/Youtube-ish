@@ -32,7 +32,7 @@ function displayResults(responseJson) {
   $("#results").removeClass("hidden");
 }
 
-function getYouTubeVideos(query, maxResults = 50) {
+function getYouTubeVideos(query, maxResults = 15) {
   const params = {
     key: apiKey,
     q: query,
