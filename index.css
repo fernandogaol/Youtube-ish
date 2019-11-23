@@ -67,6 +67,9 @@ input {
   width: 360px;
   margin: auto;
 }
+.weather {
+  visibility: hidden;
+}
 
 @media only screen and (min-width: 1000px) {
   .container {
@@ -100,5 +103,31 @@ input {
     margin: auto;
     height: 600px;
     border-radius: 15px;
+  }
+  .weather {
+    visibility: visible;
+    background: white;
+    color: black;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 150px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10%;
+  }
+  .city-name,
+  .country-name {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .location-wrapper {
+    display: flex;
   }
 }
