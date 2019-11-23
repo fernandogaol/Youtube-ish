@@ -26,7 +26,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 150px;
+  height: 200px;
   margin: auto;
 }
 
@@ -34,16 +34,25 @@ button:hover {
   color: red;
 }
 input {
+  margin-top: 5px;
   font-size: 20px;
+  width: 160px;
 }
 button {
   font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+}
+
+button:hover,
+input:hover {
+  font-weight: bold;
 }
 
 button,
 input {
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .hidden {
